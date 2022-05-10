@@ -7,102 +7,135 @@
     <title>Phim Hoạt Hình</title>
     
     <style>
-        body{
-            font-family: Arial, Tahoma;
-            font-size: 12px;
-        }
- 
-        #main{
-            width: 1000px;
-            padding: 0;
-            margin-left: auto;
-            margin-right: auto;
+        #header {
+            width: 100%;
+            height: 70px;
+            background-color: yellow;
         }
 
-        #head{
-            height: 100px;
-            background-color: #F5F5F5;
-            border: 1px solid #CDCDCD;
-            margin-bottom:5px;
+        .picture {
+            width: 100%;
+            height:70px;
+            
+            float: top;
         }
 
-        #head-link{
-            height: 30px;
-            line-height: 30px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border: 1px solid #CDCDCD;
-            background-color: #F5F5F5;
-            margin-bottom:5px;
-            clear: both;
-        }
-
-        #left{
-            width: 150px;
-            min-height: 400px;
-            border: 1px solid #CDCDCD;
-            float:left;
-            background-color: pink;
-            margin-bottom: 5px;
-        }
-
-        #content{
-            width: 600px;
-            min-height: 400px;
-            border: 1px solid #CDCDCD;
-            float:left;
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-        }
-
-        #right{
-            width: 234px;
-            min-height: 400px;
-            border: 1px solid #CDCDCD;
-            float:right;
-            margin-bottom: 5px;
-        }
-
-        #footer{
+        .navigation {
+            width: 100%;
             height: 50px;
-            clear: both;
-            border: 1px solid #CDCDCD;
-            background-color: #F8F8FF;
+            background-color: purple;
+        }
+
+        .navigation div{
+            text-align: center;
+            line-height: 50px;
+            width: 25%;
+            float: left;
+            font-size: 20px;
+            color: white;
+        }
+
+        .main{
+            width: 100%;
+            height: 800px;
+        }
+
+        .left {
+            width: 30%;
+            height: 800px;
+            background: red;
+            float: left;
         }
         
-    </style>
+        .picture {
+            width: 100%;
+            height: 200px;
+            background: brown;
+            float: top;
+        }
+        .picture img {
+            width: 100%;
+            height: 200px;
+        }
+        
 
+        .right {
+            width: 70%;
+            height: 800px;
+            background: green;
+            float: left;
+        }
+
+        .video {
+            width: 100%;
+            height: 500px;
+            background: green;
+        }
+
+        .content {
+            width: 100%;
+            height: 300px;
+            background: green;
+            float: left;
+        }
+
+        
+        .footer {
+            width: 100%;
+            height: 50px;
+            background: plum;
+        }
+
+        .footer h3{
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
 </head>
 <body>
-    <div id="main">
-        <div id="head">
-        </div>
-        <div id="head-link">
-        </div>
-        <div id="left">
-        </div>
-        <div id="content">
-        </div>
-        <div id="right">
-        </div>
-        <div id="footer">
-        </div>
+    <div id="header">
+        <img src="6.PNG" alt="anh 6">
+    </div>
+    <div class="navigation">
+        <div>Phim hoat hinh</div> 
+        <div>Phim hoat hinh yeu thich</div>
+        <div> Nhan vat hoat hinh</div>
+        <div> Gop y</div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="picture">
+                <img src="1.PNG" alt="anh 1">
+            </div>
+            <div class="picture">
+                <img src="2.PNG" alt="anh 2">
+            </div>
+            <div class="picture">
+                <img src="3.PNG" alt="anh 3">
+            </div>
+            <div class="picture">
+                <img src="4.PNG" alt="anh 4">
+            </div>
         </div>
 
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>
+        
+        <div class="right">
+            <div class="video">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/NnRdePN6jcg" title="YouTube video player"&loop=1>
+                </iframe>
     
-    <tr>
-        <td>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/NnRdePN6jcg" title="YouTube video player"&loop=1>
-            </iframe>
-        </td>
-    </tr>
+            </div>
+            <div class="content">
+                <p>Doraemon Ep 430 To la Mari day & Gay di chuyen
+                    <br> 5,147,528 luot xem
+                </p>
+                <nav>Bộ truyện được xem là huyền thoại của Nhật Bản. Nói về cuộc sống của một chú nhóc tên Nobita, tính tình hậu đậu và chú mèo máy Doremon đến từ thế kỉ 22 cùng những người bạn Xuka, Chaien, Xeko; để từ đó gây ra bao tiếng cười và rút ra những bài học ý nghĩa cho người xem !!</nav>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>@ 2017 - Thiet ke web boi trang hoathinhvn.net</h3>
+    </div>
             
 </body>
 </html>
