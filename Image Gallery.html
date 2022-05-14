@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic{
+            width: 100%;
+            height: auto;
+        }
+
+        .pic1{
+            width: 22%;
+            height: 90%;
+            border: 1px solid #ccc;
+            float: left;
+            margin: 1%;
+        }
+
+        .pic1:hover{
+            border: 1px solid black;
+        }
+
+        .pic1 p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pic1 img{
+            width: 100%;
+            height: auto;
+        }
+
+        .footer{
+            width: 100%;
+            height: 150px;
+            padding: 6px;
+            clear: both;
+        }
+
+        @media screen and (max-width: 700px){
+            .pic{
+                height: auto;
+            }
+
+            .pic1{
+                width: 47%;
+            }
+        }
+
+        @media screen and (max-width: 500px){
+            .pic{
+                height: auto;
+            }
+
+            .pic1{
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <h2>Resize the browser window to see the effect.</h2>
+    <div class="pic">
+        <div class="pic1">
+            <a href=""><img src="1a.jpg" alt=""></a>
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="pic1">
+            <a href=""><img src="1b.jpg" alt=""></a>
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="pic1">
+            <a href=""><img src="1c.jpg" alt=""></a>
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="pic1">
+            <a href=""><img src="1d.jpg" alt=""></a>
+            <p>Add a description of the image here</p>
+        </div>
+    </div>
+    <div class="footer">
+        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).  
+    </div>
+</body>
+</html>
