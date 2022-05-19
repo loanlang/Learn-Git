@@ -6,37 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .header{
+        .header {
             display: grid;
             grid-template-columns: 3fr 7fr;
             grid-template-rows: 200px;
             grid-gap: 10px;
+            margin-bottom: 10px;
         }
-
-        .logo, .banner{
+        
+        .logo, .banner {
             background: yellow;
             border: 1px solid;
         }
 
-        .nav{
-            justify-content: ;
+        .nav {
+            display: grid;
+            grid-template-columns: repeat(4, 50px) 1fr;
+            height: 50px;
+            grid-gap: 20px;
+            background: green;
+            line-height: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 10px;
         }
-    </style>
+
+        .login {
+            justify-self: right;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: 2fr 7fr 3fr;
+            grid-gap: 10px;
+        }
+
+        .left, .right {
+            border: 1px solid;
+        }
+
+        .left, .right {
+            height: 600px;
+        }
+
+        .mid {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+
+        }
+
+        .mid-item {
+            border: 1px solid;
+            height: 200px;
+        }
+
+        .slides {
+            grid-column: 1/4 ;
+            border: 1px solid;
+            height: 200px;
+        }
+    </style>    
 </head>
 <body>
     <div class="header">
         <div class="logo">Logo</div>
         <div class="banner">Banner</div>
-
     </div>
     <div class="nav">
         <div class="nav-item">Home</div>
         <div class="nav-item">Contact</div>
         <div class="nav-item">About</div>
-        <div class="nav-item"></div>
-        <div></div>
-        <div class=""><button>Đăng Nhập</button></div>
-        <div class="dangky"><button>Đăng Ký</button></div>
+        <div class="nav-item">Drop</div>
+        <div class="nav-item login">
+            <div>Login</div>
+            <div>Register</div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">Slide bar</div>   
+        <div class="mid">
+            <div class="slides">
+
+            </div>
+            <div class="mid-item"></div>
+            <div class="mid-item"></div>
+            <div class="mid-item"></div>
+            <div class="mid-item"></div>
+            <div class="mid-item"></div>
+            <div class="mid-item"></div>
+        </div>   
+        <div class="right">Poster</div>   
     </div>
 </body>
 </html>
