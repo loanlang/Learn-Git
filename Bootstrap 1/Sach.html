@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+        }
+        header {
+            background-color: lightgreen;
+        }
+        nav {
+            background-color: lightsalmon;
+        }
+        article {
+            width: 70%;
+            background-color: lightskyblue;
+        }
+        footer {
+            background-color: rgba(230, 93, 93);
+        }
+        aside {
+            width: 30%;
+            background-color: yellow;
+        }
+        .content {
+            display: inline-flex;
+            width: 100%;
+        }
+        ul {
+            display: inline-flex;
+        }
+        ul li {
+            padding: 10px;
+            list-style: none;
+        }
+
+        .navbar ul.menu {
+        list-style: none;
+        }
+
+        .navbar ul.menu li {
+        padding: 3px;
+        }
+
+        .navbar {
+            ul.menu {
+                list-style: none;
+
+                li {
+                    padding: 3px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .navbar ul.menu {
+            list-style: none;
+        }
+        .navbar ul.menu li {
+            padding: 3px;
+        }
+        .navbar ul.menu li a {
+            text-decoration: none;
+        }
+
+        @mixin colorVsStyle {
+            color: #f06;
+            font-style: italic;
+        }
+
+        .navbar {
+            ul.menu {
+                list-style: none;
+
+                li {
+                    padding: 5px;
+
+                    a {
+                        text-decoration: none;
+                        @include colorVsStyle;
+                    }
+                }
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" >
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+               </li>
+             </ul>
+            <ul>
+                <li>
+                    <a href="#">Navbar</a>
+                </li>
+                <li>
+                    <a href="#">Danh mục sản phẩm 1</a>
+                </li>
+                <li>
+                    <a href="#">Danh mục sản phẩm 2</a>
+                </li>
+                <li>
+                    <a href="#">Danh mục sản phẩm 3</a>
+                </li>
+                <li>
+                    <a href="#">Danh mục sản phẩm 4</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-8 col-lg-4">.col-md-8</div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-8">.col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3></div>
+                <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                </div>
+            <h1>Ví dụ về .container</h1>
+            <p>Nội dung chi tiết.</p>
+        </div>
+        <main class="content">
+            <aside>
+                <h1>ASIDE</h1>
+            </aside>
+            <article>
+                <h1>ARTICLE</h1>
+                <h4>Đây là nội dung</h1>
+            </article>
+        </main>
+        <footer>
+            <h1>FOOTER</h1>
+            <p>Copyright &copy; 2021 codegym</p>
+        </footer>
+    </body>
+    </html>
+</body>
+</html>
