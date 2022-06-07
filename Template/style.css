@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+        :root {
+            --primary: #348bff;
+            --secondary: #031b3f;
+        }
+
+        .cl-primary {
+            color: var(--primary);
+        }
+
+        .cl-secondary {
+            color: var(--secondary);
+        }
+
+        * {
+            color: #6e88a9;
+        }
+
+        /* header */
+        body {
+            background-color: #ECF4FE;
+        }
+
+        .btn-login {
+            margin: 0px 4px;
+            background-color: inherit;
+            border: 1px solid var(--primary);
+            width: 100px;
+            border-radius: 5px;
+            font-weight: bold;
+       }
+
+       .btn-login:hover {
+           background-color: var(--primary);
+           color: white;
+       }
+
+       .btn-register {
+            margin: 0px 4px;
+            background-color: var(--primary);
+            color: white;
+            border: 1px solid var(--primary);
+            width: 100px;
+            border-radius: 5px;
+            font-weight: bold;
+       }
+
+       .btn-register:hover {
+           background-color: inherit;
+           color: var(--primary);
+       }
+
+       .navbar-brand-icon {
+            background-color: var(--primary);
+            color: white;
+            padding: 7px 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+       }
+
+       .navbar-brand {
+           color: var(--secondary);
+           font-weight: bold;
+       }
+
+       .nav-link {
+           color: var(--secondary);
+           margin: 0px 3px;
+           font-weight: bold;
+       }
+
+       .col-7-title {
+           font-size: 50px;
+           color: var(--secondary);
+           font-weight: bold;
+       }
+
+       .col-5-title {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        .btn-course {
+            margin: 0px 4px;
+            background-color: var(--primary);
+            color: white;
+            border: 1px solid var(--primary);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .btn-course:hover {
+            background-color: inherit;
+            color: var(--primary);
+        }
+
+        .col-2-h3 {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .name-course {
+            width: fit-content;
+            float: left;
+            background-color: #ECF4FE;
+            padding: 3px 15px;
+            border-radius: 5px;
+        }
+
+        .name-course-color {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            margin: 5px;
+        }
+        
+        .price-course {
+            width: fit-content;
+            float: right;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .course-arrow {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 30px;
+        }
+
+        .rect-quantity {
+            width: fix-content;
+            float: left;
+            margin: 0 20px;
+        }
+
+        .rect-quantity h1 {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .rect-quantity p {
+            font-weight: bold;
+            color: var(--secondary);
+            text-align: center;
+        }
+
+        .icon-Awesome {
+            float: left;
+            width: fit-content;
+            font-size: 25px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 10px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .icon-Awesome i {
+            color: white;
+        }
+
+        .text-Awesome {
+            float: left;
+            width: fit-content;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        .best-book {
+            color: var(--secondary);
+        }
+
+        .more-course {
+            font-size: 14px;
+        }
+
+        .check-course i {
+            color: var(--primary);
+            margin-right: 10px; 
+            font-size: 20px;
+        }
+
+        .check-course b {
+            color: var(--secondary);
+            font-size: 14px;
+        }
+
+        .get-close {
+            padding-right: 80px;
+        }
+
+        .check-course button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: var(--primary);
+            border: 0;
+            border-radius: 8px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card-img-top img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .card-img-bot img {
+            border-radius: 20px;
+            border: 15px solid #ECF4FE; 
+            width: 300px;
+        }
+
+        .card-img-bot {
+            margin-top: -150px;
+            margin-left: -100px;
+        }
+
+        .background-img-2o {
+            background-image: url(2o.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .background-img-2o *{
+            color: white;
+        }
+
+        .background-img-2o h1 {
+            font-weight: bold;
+        }
+
+        .background-img-2o p {
+            font-size: 17px;
+        }
+
+        .background-img-2o button {
+            border: 0;
+            padding: 15px 25px;
+            background-color: white;
+            border-radius: 15px;
+            color: var(--secondary);
+            margin-top: 40px;
+        }
+
+        .icon-social i {
+            margin: 0 7px;
+            font-size: 18px;
+            color: var(--secondary);
+        }
+
+        .title-footer {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .list-footer {
+            list-style-type: none; 
+            margin: 0;
+            margin-top: 20px; 
+            padding: 0;
+        }
+
+        .list-footer li {
+            margin-bottom: 10px;
+        }
+
+        .list-footer i {
+            margin-right: 15px;
+        }

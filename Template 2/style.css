@@ -1,0 +1,93 @@
+body {
+    background: #CAE0EB;
+}
+
+.brand_image {
+    width: 35px;
+}
+
+.brand_text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.menu_item {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu_item button {
+    border-radius: 8px !important;
+}
+
+.text-left {
+    font-size: 55px !important;
+    font-weight: bold;
+}
+
+.text-right-top {
+    background: white;
+    color: blue;
+    display: inline;
+    padding: 5px;
+}
+
+.video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.info h3 {
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 60px;
+}
+
+.info {
+    padding-left: 0;
+}
+
+.item {
+    background-color: white;
+    border-radius: 12px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item_type {
+    background-color: #CAE0EB;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.item_price {
+    color: blue;
+    font-weight: bold;
+}
+
+.item_info {
+    font-size: 11px;
+}
+
+.item_rate i {
+    font-size: 11px;
+    color: blue;
+}
+
+.fa-arrow-right {
+    color: #CAE0EB;
+}
