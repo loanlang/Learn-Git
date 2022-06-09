@@ -1,4 +1,4 @@
-.main-header{
+.main-header {
     text-align: center;
     background-color:#275c87 ;
     padding-top: 10px;
@@ -7,7 +7,7 @@
     
 }
 
-body{
+body {
     margin: 0px;
 }
 
@@ -277,6 +277,11 @@ header{
 
 }
 
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
 .backgroundfooter{
     background-color: beige;
     margin-top: 10px;
@@ -320,4 +325,8 @@ header{
 
 .icon:hover{
     font-size: 25px;
+}
+
+.product {
+    border: 1px solid grey;
 }
