@@ -175,7 +175,7 @@ body {
 }
 
 body{
-    background-color: #f7cbd3;
+    background-color: rgb(242, 232, 238);
 }
 
 button {
@@ -277,6 +277,7 @@ header{
 .Footer .Care .Email {
     margin-bottom: 15px;
 }
+
 
 .Footer{
     margin: auto;
