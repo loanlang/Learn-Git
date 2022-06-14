@@ -5,63 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binky Cake Shop</title>
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css">
 </head>
 <body>
+    <div class="menu-icon-list">
+        <i class="bi-list"></i>
+    </div>
     <header>
-        <div class="main-header">
-            <img class="logo" src="logo.png" width="35px" alt="" srcset="">
+        <div class="my-main-header">
+            <a href = 'index.html'><img class="logo" src="logo.png" width="35px" alt="" srcset=""></a>
             <div style="width: fit-content;margin: auto;">
-                <div class="div-nav">
-                    <a class="nav" href="menu.html">Menu</a>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="menu.html">Menu</a>
                    
                 </div>
-                <div class="div-nav">
-                    <a class="nav" href="">Sponge Cake</a>
-                    <div class="sub-menu">
-                        <a class="sub-nav" href="">Salted Egg Sponge Cake</a>
-                        <a class="sub-nav" href="">Fuji Mount Sponge Cake</a>
-                        <a class="sub-nav last-sub-nav" href="">Mulberry Sponge Cake</a>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="order.html">Order Online</a>
+                </div>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Sponge Cake</a>
+                    <div class="my-sub-menu">
+                        <a class="my-sub-nav" href="">Salted Egg Sponge Cake</a>
+                        <a class="my-sub-nav" href="">Mount Fuji Sponge Cake</a>
+                        <a class="my-sub-nav last-sub-nav" href="">Mulberry Sponge Cake</a>
                     
                     </div>
                 </div>
-                <div class="div-nav">
-                    <a class="nav" href="">Birthday Cake</a>
-                    <div class="sub-menu">
-                        <a class="sub-nav" href="">One Level</a>
-                        <a class="sub-nav" href="">Two Level</a>
-                        <a class="sub-nav last-sub-nav" href="">Three Level</a>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Birthday Cake</a>
+                    <div class="my-sub-menu">
+                        <a class="my-sub-nav" href="">One Level</a>
+                        <a class="my-sub-nav" href="">Two Level</a>
+                        <a class="my-sub-nav last-sub-nav" href="">Three Level</a>
                     
                     </div>
                 </div>
                 
-                <div class="div-nav">
-                    <a class="nav" href="">Savory Pastries</a>
-                    <div class="sub-menu">
-                        <a class="sub-nav" href="">Pork Pate Chaud</a>
-                        <a class="sub-nav" href="">Pork Barbeque Hum Bao</a>
-                        <a class="sub-nav last-sub-nav" href="">Crispy Chicken Bun</a>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Savory Pastries</a>
+                    <div class="my-sub-menu">
+                        <a class="my-sub-nav" href="">Pate Chaud</a>
+                        <a class="my-sub-nav" href="">Pork Babarque Hum Bao</a>
+                        <a class="my-sub-nav last-sub-nav" href="">Crispy Chicken Buns</a>
                     
                     </div>
                 </div>
-                <div class="div-nav">
-                    <a class="nav" href="">Delivery</a>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Delivery</a>
                 </div>
-                <div class="div-nav">
-                    <a class="nav" href="">Contact</a>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Contact</a>
                 </div>
-            </div>
-        
+            </div>      
         </div>
     </header>
 
     <div>
         <div class="slider">
            
-            <div class="slider-inner si1 active"></div>
-            <div class="slider-inner si2"></div>
-            <div class="slider-inner si3"></div>
+            <div class="slider-inner si1 active">
+                <img src = '2.jpg'> 
+            </div>
+            <div class="slider-inner si2"><img src = '3.jpg'></div>
+            <div class="slider-inner si3"><img src = '4.jpg'></div>
             <i class="bi-arrow-right-circle alright"></i>
             <i class="bi-arrow-left-circle alleft"></i>
         
@@ -273,4 +282,12 @@
     </div>
 </div>
 </body>
+
+<script>
+    const my_main_header = document.querySelector(".my-main-header");
+    const menu_icon = document.querySelector(".menu-icon-list");
+    menu_icon.addEventListener('click',function() {
+        my_main_header.classList.toggle('active');
+    })
+</script>
 </html>

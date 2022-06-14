@@ -1,0 +1,77 @@
+@media only screen and (max-width:580px) {
+    .my-main-header {
+        position: fixed;
+        width: 150px;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        text-align: left;
+        padding: 5px;
+        padding-top: 35px;
+        transform: translate(-100%);
+        transition: transform 1s;
+    }
+    .my-main-header .logo {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .menu-icon-list {
+        display: block;
+        position: fixed;
+        left: 5px;
+        top: 5px;
+        z-index: 1000;
+    }
+    .menu-icon-list i::before {
+        font-size: 20px;
+        color: lightcoral;
+        background-color: #275c87;
+        border-radius: 50%;
+        padding: 3px;
+        border: 2px solid lightcoral;
+    }
+    .my-main-header.active {
+        transform: translate(0);
+    }
+    .left, .right{
+        width: 98%;
+        margin-top: 10px;
+    }
+    .right img {
+        width: 100%;  
+    }
+
+    .item {
+        width: 99%;
+    }
+    .Blog {
+        display: block;
+    }
+    .Some {
+        width: 50%;
+    }
+    .Follow{
+        height: auto;
+        overflow: auto;
+    }
+    .Footer .Care {
+        width: 100%;
+        margin-top: 15px;
+        padding: 5px;
+    }
+    .my-div-nav {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid grey;
+    }
+    .order-picture {
+        display: none; 
+    }
+    .outside-order {
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+

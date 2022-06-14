@@ -1,17 +1,23 @@
-.main-header {
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.my-main-header {
     text-align: center;
     background-color:#275c87 ;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 21px; 
-    
+    box-sizing: content-box;
 }
 
 body {
     margin: 0px;
 }
 
-.nav {
+.my-nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -22,18 +28,18 @@ body {
     transition: all 0.5s; 
 }
 
-.nav:hover{
+.my-nav:hover{
     color: #275c87;
     background-color: white;
 }
 
-.div-nav{
+.my-div-nav{
     width: 150px;
     position: relative;
     float:left;
 }
 
-.sub-menu{
+.my-sub-menu{
     width: 200px;
     position: absolute;
     left: 0;
@@ -46,25 +52,25 @@ body {
     transition: opacity 0.3s;
 }
 
-.sub-nav{
+.my-sub-nav{
     color: #275c87;
     text-decoration: none;
     padding: 10px;
     display: block;
     border-bottom: 1px solid silver;
 }
-.div-nav:hover .sub-menu{
+.my-div-nav:hover .my-sub-menu{
     opacity: 1;
     transform: scale(1);
     top: 25px;
 
 }
 
-.last-sub-nav{
+.my-last-sub-nav{
     border-bottom: 0;
 }
 
-.sub-nav:hover{
+.my-sub-nav:hover{
     color: white;
     background-color: #275c87;
 }
@@ -76,7 +82,7 @@ body {
 }
 
 .slider{
-    height: 400px;
+    /* height: 400px; */
     width: 1000px;
     max-width: 100%;
     margin: auto;
@@ -84,7 +90,7 @@ body {
 }
 
 .slider-inner{
-    height: 100%;
+    height: fit-content;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -96,8 +102,16 @@ body {
     transition: all .5s;
 }
 
+.slider-inner:first-child {
+    position: relative;
+}
+
 .slider-inner.active{
     opacity: 1;
+}
+
+.slider-inner img {
+    width: 100%;
 }
 
 .slider .alright{
@@ -137,23 +151,6 @@ body {
      background-color: pink;
  }
 
-.si1{
-    background-image: url("2.jpg"); 
-    background-repeat: no-repeat;
-   
-}
-
-
-
-.si2{
-    background-image: url("3.jpg"); 
-    background-repeat: no-repeat;
-}
-
-.si3{
-    background-image: url("4.jpg"); 
-    background-repeat: no-repeat;
-}
 
 .row{
     max-width: 100%;
@@ -267,12 +264,23 @@ header{
 .Footer .Care{
     width: 25%;
     float: left;
+}
 
+.Footer .Care p {
+    line-height: 25px;
+}
+
+.Footer .Care h3 {
+    margin-bottom: 15px;
+}
+
+.Footer .Care .Email {
+    margin-bottom: 15px;
 }
 
 .Footer{
     margin: auto;
-    width: 1280px;
+    max-width: 1140px;
     overflow: auto;
 
 }
@@ -329,4 +337,65 @@ body {
 
 .product {
     border: 1px solid grey;
+}
+
+.menu-title {
+    color:red;
+    font-weight: bold;
+    margin: 15px auto;
+}
+
+.order-input {
+    width: 100%;
+}
+
+.order-submit {
+    padding: 5px 20px;
+    background-color: lightcyan;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.order-submit:hover {
+    background-color: rgb(150, 255, 255);
+}
+
+.order-picture {
+    position: relative;
+}
+
+.order-menu {
+    width: 100%;
+}
+
+.order-menu:not(:first-child) {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+
+.price-total {
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.outside-order {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.icon-check {
+    color: green;
+    cursor: pointer;
+}
+
+.menu-icon-list {
+    display: none;
 }

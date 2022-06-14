@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binky Cake Shop</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css">
+</head>
+<body>
+    <div class="menu-icon-list">
+        <i class="bi-list"></i>
+    </div>
+    <header>
+        <div class="my-main-header">
+            <a href = 'index.html'><img class="logo" src="logo.png" width="35px" alt="" srcset=""></a>
+            <div style="width: fit-content;margin: auto;">
+                <div class="my-div-nav">
+                    <a class="my-nav" href="menu.html">Menu</a> 
+                </div>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="order.html">Order Online</a>
+                </div>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Sponge Cake</a>
+                    <div class="my-sub-menu">
+                        <a class="my-sub-nav" href="">Salted Egg Sponge Cake</a>
+                        <a class="my-sub-nav" href="">Mount Fuji Sponge Cake</a>
+                        <a class="my-sub-nav last-sub-nav" href="">Mulberry Sponge Cake</a>
+                    
+                    </div>
+                </div>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Birthday Cake</a>
+                    <div class="my-sub-menu">
+                        <a class="my-sub-nav" href="">One Level</a>
+                        <a class="my-sub-nav" href="">Two Level</a>
+                        <a class="my-sub-nav last-sub-nav" href="">Three Level</a>
+                    
+                    </div>
+                </div>
+                
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Savory Pastries</a>
+                    <div class="my-sub-menu">
+                        <a class="my-sub-nav" href="">Pate Chaud</a>
+                        <a class="my-sub-nav" href="">Pork Babarque</a>
+                        <a class="my-sub-nav last-sub-nav" href="">Shredded Chicken</a>
+                    
+                    </div>
+                </div>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Delivery</a>
+                </div>
+                <div class="my-div-nav">
+                    <a class="my-nav" href="">Contact</a>
+                </div>
+            </div>      
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <!-- <form> -->
+                    <h4>Order Form</h4>
+                    <label for="Question">Select your cake</label><br>
+                    <select class="order-input" id="order-select">
+                        <option value="0">Salted Egg Sponge Cake</option>
+                        <option value="1">Salted Egg complex Cake</option>
+                        <option value="2">Salted Egg CupCake</option>
+                        <option value="3">Mount Fuji Sponge Cake</option>
+                        <option value="4">Fuji Mount Pandan Cake</option>
+                        <option value="5">Fuji Mount Sakura Cake</option>
+                        <option value="6">Mulberry Sponge Cake</option>
+                        <option value="7">Mulberry Yogurt Cake</option>
+                        <option value="8">Mulberry Cheese Cake</option>
+                        <option value="9">One Layer Birthday Cake</option>
+                        <option value="10">Two Tier Birthday Cake</option>
+                        <option value="11">Three Tier Birthday Cake</option>
+                        <option value="12">Pork Pate Chaud</option>
+                        <option value="13">Pork Barbeque Hum Bao</option>
+                        <option value="14">Crispy Chicken Buns</option>
+                    </select><br>
+                    <label for="Question">Quantity</label><br>
+                    <input class="order-input" id="plurality" type="text"><br>
+                    <hr>
+                    <h4>Billing Information</h4>
+                    <label for="username">Your name:</label><br>
+                    <input class="order-input" type="text"><br>
+                    <label for="pwd">Phone number:</label><br>
+                    <input class="order-input" type="text"><br>
+                    <label for="pwd">Email:</label><br>
+                    <input class="order-input" type="text"><br>
+                    <label for="pwd">Address:</label><br>
+                    <input class="order-input" type="text"><br>
+                    <label for="pwd">Best time to call:</label><br>
+                    <input class="order-input" type="text"><br>
+                    <div style="text-align: center;">
+                        <input class="order-submit" type="submit" value="Pay Here">
+                    </div>
+                    <hr>
+                    <h4>Type your message on the cake</h4>
+                    <textarea class="order-input" rows = '3' type="text"></textarea><br><br>
+                <!-- </form> -->
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="outside-order">
+                    <div class="order-picture">
+                        <img class="order-menu" style="opacity: 1;" src="menu1.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu9.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu10.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu7.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu2.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu6.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu5.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu4.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu3.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu11.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu13.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu12.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu16.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu14.jpg" alt="">
+                        <img class="order-menu" style="opacity: 0;" src="menu15.jpg" alt="">
+                    </div>
+                    
+                        <div class="row">
+                            <div class="col-5 price-total">
+                                $<span id="Single-Price">15</span>
+                            </div>
+                            <div class="col-2 price-total" style = 'text-align: center;'>
+                                x <span id="Quantity">0</span>
+                            </div>
+                            <div class="col-1 price-total" style = 'text-align: center;'>
+                                <span id="">=</span>
+                            </div>
+                            <div class="col-3 price-total" style = 'text-align: right;'>
+                                $<span id="Total">0</span>
+                            </div>
+                            <div class="col-1 price-total" style = 'text-align: right;'>
+                                <i class="bi-cart-check-fill icon-check" id="check-fill"></i>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="price-cart">
+                        </div>
+                        <hr style = 'border-top: 3px solid black;'>
+                        <div class="row">
+                            <div class="col-5 price-total">
+                                Total:
+                            </div>
+                            <div class="col-2 price-total" style = 'text-align: center;'>
+                                
+                            </div>
+                            <div class="col-1 price-total" style = 'text-align: center;'>
+                               
+                            </div>
+                            <div class="col-3 price-total" style = 'text-align: right;'>
+                                $<span id="totaltotal">0</span>
+                            </div>
+                            <div class="col-1 price-total" style = 'text-align: right;'>
+                                
+                            </div>
+                        </div>
+                    
+                    <script>
+                        const order_value = document.querySelector("#order-select");
+                        const order_menu = document.querySelectorAll(".order-menu");
+                        const Single_Price = document.querySelector("#Single-Price");
+                        const Quantity = document.querySelector("#Quantity");
+                        const Total = document.querySelector("#Total");
+                        const price = [15,20,15,25,30,35,20,30,30,25,45,65,20,15,20]
+                        const plurality = document.querySelector("#plurality");
+                        const check_fill = document.querySelector("#check-fill");
+                        const price_cart = document.querySelector("#price-cart");
+                        const cake_name = ['Salted Egg Sponge Cake','Salted Egg complex Cake',
+                        'Salted Egg CupCake','Mount Fuji Sponge Cake','Fuji Mount Pandan Cake',
+                        'Fuji Mount Sakura Cake','Mulberry Sponge Cake','Mulberry Yogurt Cake',
+                        'Mulberry Cheese Cake','One Layer Birthday Cake','Two Tier Birthday Cake',
+                        'Three Tier Birthday Cake','Pork Pate Chaud','Pork Barbeque Hum Bao',
+                        'Crispy Chicken Buns']  
+                        const totaltotal = document.querySelector("#totaltotal");                   
+                        order_value.addEventListener("change", function () {
+                            for (var i = 0; i < order_menu.length; i++)
+                            {
+                                order_menu [i].style.opacity = "0";
+                                Single_Price.innerHTML = price[order_value.value];
+                            }
+                            order_menu [order_value.value].style.opacity = "1";
+                        })
+                        setInterval(function () {
+                            Quantity.innerHTML = plurality.value; 
+                            if (Quantity.innerHTML == "") Quantity.innerHTML = "0";
+                            Total.innerHTML = Quantity.innerHTML * Single_Price.innerHTML;
+                        },100)
+                        check_fill.addEventListener("click",click_check_fill );
+                        plurality.addEventListener('keyup',function (e) {
+                            console.log('hllo');
+                            if (e.key === 'Enter' || e.keyCode === 13) {
+                                click_check_fill();
+                            }
+                        })
+                        function click_check_fill() {
+                            if (Quantity.innerHTML != "0"){
+                                elme = document.createElement("div");
+                                price_cart.prepend(elme);
+                                elme.outerHTML = `
+                                <div class="row" style = 'font-size: 20px;'><b>`
+                                    +cake_name[order_value.value]+`</b></div>
+                                <div class="row">
+                                    <div class="col-5 price-total">
+                                        $` + Single_Price.innerHTML + `
+                                    </div>
+                                    <div class="col-2 price-total" style = 'text-align: center;'>
+                                        x ` + Quantity.innerHTML + `
+                                    </div>
+                                    <div class="col-1 price-total" style = 'text-align: center;'>
+                                        =
+                                    </div>
+                                    <div class="col-3 price-total" style = 'text-align: right;'>
+                                       $` + Total.innerHTML + `
+                                    </div>
+                                    <div class="col-1 price-total" style = 'text-align: right;'>
+                                        
+                                    </div>
+                                </div>
+                                `
+                                Quantity.innerHTML = '0';
+                                plurality.value = '0';
+                                totaltotal.innerHTML = parseInt(totaltotal.innerHTML) + parseInt(Total.innerHTML);
+                            } 
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backgroundfooter">   
+        <div class="Footer">
+            <div class="Care">
+                <h3>Subscribe to our newsletter</h3>
+                <div class="Email">
+                    <input type="text" placeholder="Email address">
+                    <button>Sign up</button>
+                </div>
+                    <p>Contact us directly now via:<br>
+    
+                        Email | info@honeypeachsg.com<br>
+                        
+                        Whatsapp | +6590884932
+                    </p>
+            </div>
+                
+            <div class="Care">
+                <h3>Blog</h3>
+                <p>Cake Sizing Guide<br>
+                    Frequently Asked Questions (FAQ)<br>
+                    Our Story<br>
+                    Terms of Service
+                </p>  
+                        
+            </div>
+            <div class="Care">
+                <h3>Cake Care</h3>
+                <p>
+                    
+                    Collaborations / Partnerships<br>
+                    Hiring<br>
+                    Terms & Conditions
+                </p>
+            </div>
+            <div class="Care">
+            <h3>Cake Delivery FAQ</h3>
+                <p>Collection / Delivery<br>
+                    Our Vision & Mission<br>
+                    Refund Policy
+                    </p>
+            </div>
+            
+            
+        </div>
+        <div style="text-align: center; font-size: 20px;">
+            <i class="bi-facebook icon"></i>
+            <i class="bi-instagram icon"></i>
+            <i class="bi-twitter icon"></i>
+            <i class="bi-youtube icon"></i>
+        </div>
+    </div>
+</body>
+<script>
+    const my_main_header = document.querySelector(".my-main-header");
+    const menu_icon = document.querySelector(".menu-icon-list");
+    menu_icon.addEventListener('click',function() {
+        my_main_header.classList.toggle('active');
+    })
+</script>
+</html>
